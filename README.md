@@ -20,6 +20,7 @@ See screenshot below for reference:
 ![Password Generator](/assets/03-javascript-homework-demo.png)
 
 ## Key Checks Included ensuring the following:
+```bash
 i. WHEN user clicks button to generate password >
 THEN user is presented with series of prompts for password criteria
 ii. WHEN prompted for password criteria > THEN user selects which criteria to include in password
@@ -28,3 +29,4 @@ iv. WHEN user is prompted for character types to include in password > THEN user
 v. WHEN user answers each prompt > THEN user input should be validated and at least one character type should be selected
 vi. WHEN all prompts are answered > THEN password is generated that matches the selected criteria
 vii. WHEN password is generated > THEN password is either displayed in an alert or written to the page
+```
