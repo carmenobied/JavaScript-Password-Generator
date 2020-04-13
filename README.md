@@ -16,6 +16,9 @@ JavaScript Components Used:
 function() - function generatePassword() - Math.random() - Math.floor() - charAt() method - .toString() method - document.getElementByID()
 ```
 
+See screenshot below for reference: 
+![Password Generator](/assets/03-javascript-homework-demo.png)
+
 ## Key Checks Included ensuring the following:
 i. WHEN user clicks button to generate password >
 THEN user is presented with series of prompts for password criteria
