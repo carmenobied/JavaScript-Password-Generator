@@ -13,7 +13,7 @@ iv. Check the site on different devices and screens to see the responsiveness.
 ## Usage
 JavaScript Components Used:
 ```bash
-function() - function generatePassword() - Math.random() - Math.floor() - charAt() method - .toString() method - document.getElementByID()
+function() - generatePassword() - Math.random() - Math.floor() - charAt() method - .toString() method - document.getElementByID()
 ```
 
 See screenshot below for reference: 
@@ -21,12 +21,11 @@ See screenshot below for reference:
 
 ## Key Checks Included ensuring the following:
 ```bash
-i. WHEN user clicks button to generate password >
-THEN user is presented with series of prompts for password criteria
-ii. WHEN prompted for password criteria > THEN user selects which criteria to include in password
-iii. WHEN prompted for length of password > THEN user chooses length of at least 8 characters and no more than 128 characters
-iv. WHEN user is prompted for character types to include in password > THEN user chooses lowercase, uppercase, numeric, and/or special characters
-v. WHEN user answers each prompt > THEN user input should be validated and at least one character type should be selected
-vi. WHEN all prompts are answered > THEN password is generated that matches the selected criteria
-vii. WHEN password is generated > THEN password is either displayed in an alert or written to the page
+i. WHEN user clicks button to generate password: THEN user is presented with series of prompts for password criteria
+ii. WHEN prompted for password criteria: THEN user selects which criteria to include in password
+iii. WHEN prompted for length of password: THEN user chooses length of at least 8 characters and no more than 128 characters
+iv. WHEN user is prompted for character types to include in password: THEN user chooses lowercase, uppercase, numeric, and/or special characters
+v. WHEN user answers each prompt: THEN user input should be validated and at least one character type should be selected
+vi. WHEN all prompts are answered: THEN password is generated that matches the selected criteria
+vii. WHEN password is generated: THEN password is either displayed in an alert or written to the page
 ```
