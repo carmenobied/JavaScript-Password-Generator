@@ -20,9 +20,15 @@ generateBtn.addEventListener("generate", writePassword);
 
 function getRandomLower() {
 
-    return(String.fromCharCode()}
+    return(String.fromCharCode()
+}
+
+function getRandomUpper() {
+
+    return(String.fromCharCode()
+  }
     
-    console.log(Math.random() * 10)
+console.log(Math.random() * 10)
 
 
 // for (var i = 0; i < 10; i++) {
