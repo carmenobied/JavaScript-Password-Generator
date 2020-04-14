@@ -1,43 +1,89 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// Welcome user and prompt user to generate a password
+window.onload = alert("Welcome! Please click 'Generate password' to start!");
 
-  passwordText.value = password;
+// User input variables: 
+var enter;
+var Num;
+var SpecialChar;
+var Uppercase;
+var Lowercase;
 
-}
+// Event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
-// Add event listener to generate button
+// WHEN user clicks button to generate password: THEN user is presented with series of prompts for password criteria
 
-// starting with the generator functions below
+// Function to generate password
+function generatePassword() {
 
-document.getElementById(“password”)
+// Asks for user input
+  enter = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
 
-generateBtn.addEventListener("generate", writePassword);
+// WHEN prompted for password criteria: THEN user selects which criteria to include in password
 
-function getRandomLower() {
+// First validate user input.
+  if (!enter) {
+    alert("This password needs a value");
+    } 
 
-    return(String.fromCharCode()
-}
-
-function getRandomUpper() {
-
-    return(String.fromCharCode()
-  }
-    
-console.log(Math.random() * 10)
-
-
-// for (var i = 0; i < 10; i++) {
-//     // Generate a random number between 1 and 10
-//     // Math.floor will round down, meaning we would get a number between 0 and 9, so we'll always add 1 to bump it up.
-//     var num = Math.floor(Math.random() * 10) + 1;
-
-//     // Display in console
-// //     console.log(num);
-//   }
-
+// When prompted for length of password, then user chooses length of at least 8 characters and no more than 128 characters
 // passwordLength = parseInt(prompt("Please select a password length between 8 and 128 characters."));
+  else if (enter < 8 || enter > 128) {
+    enter = parseInt(prompt("You must select a password length between 8 and 128 characters."));
+    } 
+  else {
+
+    // Once user input is validated, continue user input prompts
+    Num = confirm("Will this password contain numbers?");
+    SpecialChar = confirm("Will this password contain special characters?");
+    Uppercase = confirm("Will this password contain Uppercase letters?");
+    Lowercase = confirm("Will this password containLowercase letters?");
+      };
+
+// WHEN user is prompted for character types to include in password: THEN user chooses lowercase, uppercase, numeric, and/or special characters
+      // Lower case 
+      function getRandomLower() {
+        return(String.fromCharCode((Math.floor(Math.random() * 26) + 97); 
+      }
+
+      // Upper case 
+      function getRandomUpper() {
+          return(String.fromCharCode((Math.floor(Math.random() * 26) + 97); 
+      }
+
+      // Upper case 
+      function getRandomNumber()) {
+        return(String.fromCharCode((Math.floor(Math.random() * 10) + 48); 
+      }
+          
+      // Upper case 
+      function getRandomSymbol() {
+        const symbols = !@#%^&*{}[],.
+        return symbols [Math.floor(Math.random() * symbols.length]; 
+      }
+
+// WHEN user answers each prompt: THEN user input should be validated and at least one character type should be selected
+
+// WHEN all prompts are answered: THEN password is generated that matches the selected criteria
+  for (var i = 0; i < enter; i++) {
+  var num = numx [Math.floor(Math.random() * numx.length)];
+  push() 
+
+// WHEN password is generated: THEN password is either displayed in an alert or written to the page.
+  document.getElementById("password");
+  alert("This password needs a value");
+
+// // Notes: 
+// //  for (var i = 0; i < x; i++) {
+// //     var num = x [Math.floor(Math.random() * x.length)];
+// //      console.log(num);}
+// // passwordLength = parseInt(prompt("Please select a password length between 8 and 128 characters."));
+
+// Password criteria:
+// - Minimum length of 8 characters, max 128
+// - Contains a lowercase letter
+// - Contains an uppercase letter
+// - Contains a number or special character 
