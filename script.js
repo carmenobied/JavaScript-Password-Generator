@@ -29,19 +29,19 @@ if (!passwordLength) {
     else(passwordLength);
 
 var characterType = [];
-  if (confirm("This password will contain uppercases")) {
+  if (confirm("Do you want this password to contain uppercases")) {
     characters.push("upperCase");
   }
 
-  if (confirm("This password will contain lowercases")) {
+  if (confirm("Do you want this password to contain lowercases")) {
     characters.push("lowerCase");
   }
 
-  if (confirm("This password will contain numbers")) {
+  if (confirm("Do you want this password to contain numbers")) {
     characters.push("numeric");
   }
 
-  if (confirm("This password will contain special characters")) {
+  if (confirm("Do you want this password to special characters")) {
     characters.push("specialChar");
   }
 
@@ -55,8 +55,8 @@ var characterType = [];
 // Generate password function
   
 function loop() {
-  for (var i = 0; i < passwordLength; i++) {
+  for (var i = 0; i < +passwordLength; i++) {
     // Computer randomly chooses a choice from the options array, based on stored user inputs.
-    finalSecurePassword = characterType[Math.floor(Math.random() * passwordArray)];
+    randomPassword = characterType[Math.floor(Math.random() * passwordArray)];
   }
 }
