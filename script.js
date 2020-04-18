@@ -10,7 +10,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
@@ -38,23 +37,27 @@ if (!passwordLength) {
       passwordLength = parseInt(prompt("Password length must be between 8 and 128 characters. Please try again!"));
     } 
 
-    else(passwordLength);
+    else (passwordLength) 
+      var confirmUpperCaseChar = confirm("Do you want this password to contain uppercases?");
+      var confirmLowerCaseChar = confirm("Do you want this password to contain lowercases?");
+      var confirmNumericChar = confirm("Do you want this password to contain numbers?");
+      var confirmSpecialChar = confirm("Do you want this password to special characters?");
 
 // Push and store user input into the array
 var characterType = [];
-  if (confirm("Do you want this password to contain uppercases?")) {
+  if (confirmUpperCaseChar) {
     characterType.push(upperCase);
   }
 
-  if (confirm("Do you want this password to contain lowercases?")) {
+  if (confirmLowerCaseChar) {
     characterType.push(lowerCase);
   }
 
-  if (confirm("Do you want this password to contain numbers?")) {
+  if (confirmNumericChar) {
     characterType.push(numeric);
   }
 
-  if (confirm("Do you want this password to special characters?")) {
+  if (confirmSpecialChar) {
     characterType.push(specialChar);
   }
 
@@ -62,18 +65,20 @@ var characterType = [];
   var str = characterType.join('');
 
 // Split into a new array 
-  var passwordArray = str.split(" ");
-  console.log(passwordArray);
+  var passwordArray = str.split("");
 
 // Call passwordRandom to return passwordFinal
+  var passwordFinal = '';
+
 passwordFinal = passwordRandom((passwordLength - charTypeCount), characterType);
 return passwordFinal;
 } 
   
-function passwordRandom() {
-  for (var i = 0; i < passwordLength; i++) {
+function passwordRandom(passwordLength, passwordArray) {
+    var pwd = "";
+    for (var i = 0; i < passwordLength; i++) {
     // Computer randomly chooses a choice from the options array, based on stored user inputs.
-    password = characterType.charAt(Math.floor(Math.random() * passwordArray));
-    return password;
+    pwd += pwd + passwordArray[0].charAt(Math.floor(Math.random() * passwordArray.length - 1));
+    return pwd;
   }
 } 
