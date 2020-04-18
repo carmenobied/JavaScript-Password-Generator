@@ -23,6 +23,7 @@ function generatePassword() {
   var lowerCase = "abcdefghijklmnopqrstuvwxyz";
   var numeric = "0123456789";
   var specialChar = "!$^*&#-=~+_?@$%^{}()";
+  var charTypeCount = 0;
 
   // var all = ["upperCase", "lowerCase", "numeric", + "specialChar"];
 
@@ -32,6 +33,7 @@ function generatePassword() {
 if (!passwordLength) {
       alert("This password needs a value. Please try again!");
     }
+
     else if (passwordLength < 8 || passwordLength > 128) {
       passwordLength = parseInt(prompt("Password length must be between 8 and 128 characters. Please try again!"));
     } 
@@ -41,19 +43,19 @@ if (!passwordLength) {
 // Push and store user input into the array
 var characterType = [];
   if (confirm("Do you want this password to contain uppercases?")) {
-    characterType.push("upperCase");
+    characterType.push(upperCase);
   }
 
   if (confirm("Do you want this password to contain lowercases?")) {
-    characterType.push("lowerCase");
+    characterType.push(lowerCase);
   }
 
   if (confirm("Do you want this password to contain numbers?")) {
-    characterType.push("numeric");
+    characterType.push(numeric);
   }
 
   if (confirm("Do you want this password to special characters?")) {
-    characterType.push("specialChar");
+    characterType.push(specialChar);
   }
 
 // Join passwordLength and characterType
@@ -63,14 +65,15 @@ var characterType = [];
   var passwordArray = str.split(" ");
   console.log(passwordArray);
 
-// Generate password function
+// Call passwordRandom to return passwordFinal
+passwordFinal = passwordRandom((passwordLength - charTypeCount), characterType);
+return passwordFinal;
+} 
   
-function generatePassword() {
+function passwordRandom() {
   for (var i = 0; i < passwordLength; i++) {
     // Computer randomly chooses a choice from the options array, based on stored user inputs.
     password = characterType.charAt(Math.floor(Math.random() * passwordArray));
-    console.log(randomPassword);
     return password;
   }
 } 
-}
