@@ -2,10 +2,10 @@
 window.onload = alert("Welcome! Please click 'Generate password' to start!");
 
 // Event listener
-  var generateBtn = document.querySelector('#generate')
+  var generateBtn = document.getElementbyId('#generate')
 
   generateBtn.addEventListener('click', function() {				
-    document.querySelector('#password').value = generate();
+    document.getElementById('#password').value = generate();
   });
 
 // User input variables (strings): 
@@ -30,19 +30,19 @@ if (!passwordLength) {
 
 var characterType = [];
   if (confirm("Do you want this password to contain uppercases")) {
-    characters.push("upperCase");
+    characterType.push("upperCase");
   }
 
   if (confirm("Do you want this password to contain lowercases")) {
-    characters.push("lowerCase");
+    characterType.push("lowerCase");
   }
 
   if (confirm("Do you want this password to contain numbers")) {
-    characters.push("numeric");
+    characterType.push("numeric");
   }
 
   if (confirm("Do you want this password to special characters")) {
-    characters.push("specialChar");
+    characterType.push("specialChar");
   }
 
   // join passwordLength and characterType
@@ -57,6 +57,6 @@ var characterType = [];
 function loop() {
   for (var i = 0; i < +passwordLength; i++) {
     // Computer randomly chooses a choice from the options array, based on stored user inputs.
-    randomPassword = characterType[Math.floor(Math.random() * passwordArray)];
+    password = characterType.charAt(Math.floor(Math.random() * passwordArray));
   }
 }
