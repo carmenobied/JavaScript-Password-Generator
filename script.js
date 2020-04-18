@@ -52,3 +52,11 @@ var characterType = [];
   var passwordArray = str.split(" ");
   console.log(passwordArray);
 
+// Generate password function
+  
+function loop() {
+  for (var i = 0; i < passwordLength; i++) {
+    // Computer randomly chooses a choice from the options array, based on stored user inputs.
+    finalSecurePassword = characterType[Math.floor(Math.random() * passwordArray)];
+  }
+}
