@@ -18,7 +18,9 @@ JavaScript Components Used:
 function() - generatePassword() - Math.random() - Math.floor() - charAt() method - .toString() method - .push() - .join() - prompt()) - confirm() - addEventListener() - if/else statements - for loop - document.querySelector()
 ```
 See demo below of Password Generator: 
-![Password Generator Demo](/assets/Password-Generator.mpg4)
+<video src="video.mp4" width="320" height="200" controls preload></video>
+
+![Password Generator Demo](/assets/Password-Generator.mp4)
 
 See screenshot below for reference: 
 ![Password Generator](/assets/03-javascript-homework-demo.png)
