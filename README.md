@@ -1,19 +1,21 @@
 # JavaScript: Password Generator
 
-The goal was to create an application that generates a random password based on user-selected criteria. This app runs in the browser and features dynamically updated HTML and CSS powered by the JavaScript code. This also involved ensuring the app features a clean and polished UI, with a responsive layout, ensuring it adapts to multiple screen sizes. Employees with access to sensitive data will often need to be able to randomly generate a password that meets certain criteria so that they can create a strong password that provides greater security.
+The goal was to create an application that generates a random password based on user-selected criteria. This app runs in the browser and features dynamically updated HTML and CSS powered by the JavaScript code. This also involved ensuring the app features a clean and polished UI, with a responsive layout, ensuring it adapts to multiple screen sizes. Employees with access to sensitive data will often need to be able to randomly generate a password that meets certain criteria so that they can create a strong password that provides greater security. 
+
+Use Password Generator here: https://carmenobied.github.io/week3-homework/ 
 
 ## Installation
 ```bash
 i. Fork the Github repository.
 ii. Clone the forked repo into your local machine using gitbash/terminal to pull the project and data.
-iii. Access the index.html, portfolio.html and contact.html files and assets via Visual Studio or in your browser to view the code and website respectively.  
-iv. Check the site on different devices and screens to see the responsiveness.
+iii. Access the index.html, style.css and script.js files and assets via Visual Studio or in your browser to view the code and website respectively.  
+iv. Use the Password Generator
 ```
 
 ## Usage
 JavaScript Components Used:
 ```bash
-function() - generatePassword() - Math.random() - Math.floor() - charAt() method - .toString() method - document.getElementByID()
+function() - generatePassword() - Math.random() - Math.floor() - charAt() method - .toString() method - .push() - .join() - prompt()) - confirm() - addEventListener() - if/else statements - for loop - document.querySelector()
 ```
 
 See screenshot below for reference: 
