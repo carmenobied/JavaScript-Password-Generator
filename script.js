@@ -23,7 +23,7 @@ var passwordLength = parseInt(prompt("How many characters would you like in your
       return;
     }
 
-    if (passwordLength < 8 || passwordLength > 128) {
+    else if (passwordLength < 8 || passwordLength > 128) {
       alert("Password length must be between 8 and 128 characters. Please try again!");
       return;
     } 
