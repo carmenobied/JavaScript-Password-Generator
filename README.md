@@ -17,6 +17,8 @@ JavaScript Components Used:
 ```bash
 function() - generatePassword() - Math.random() - Math.floor() - charAt() method - .toString() method - .push() - .join() - prompt()) - confirm() - addEventListener() - if/else statements - for loop - document.querySelector()
 ```
+See demo below of Password Generator: 
+![Password Generator Demo](/assets/Password-Generator.mpg4)
 
 See screenshot below for reference: 
 ![Password Generator](/assets/03-javascript-homework-demo.png)
