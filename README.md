@@ -22,10 +22,10 @@ See screenshot below for reference:
 ![Password Generator](/assets/03-javascript-homework-demo.png)
 
 ## Key Checks Included ensuring the following:
-1. WHEN user clicks button to generate password: THEN user is presented with series of prompts for password criteria
-2. WHEN prompted for password criteria: THEN user selects which criteria to include in password
-3. WHEN prompted for length of password: THEN user chooses length of at least 8 characters and no more than 128 characters
-4. WHEN user is prompted for character types to include in password: THEN user chooses lowercase, uppercase, numeric, and/or special characters
-5. WHEN user answers each prompt: THEN user input should be validated and at least one character type should be selected
-6. WHEN all prompts are answered: THEN password is generated that matches the selected criteria
-7. WHEN password is generated: THEN password is either displayed in an alert or written to the page
+1. When user clicks button to generate password: then user is presented with series of prompts for password criteria
+2. When user is prompted for password criteria: then user selects which criteria to include in password
+3. When user is prompted for length of password: Then user chooses length of at least 8 characters and no more than 128 characters
+4. When user is prompted for character types to include in password: Then user chooses lowercase, uppercase, numeric, and/or special characters
+5. When user answers each prompt: Then user input should be validated and at least one character type should be selected
+6. When all prompts are answered: Then password is generated that matches the selected criteria
+7. When password is generated: Then password is either displayed in an alert or written to the page
