@@ -32,7 +32,7 @@ var passwordLength = parseInt(prompt("How many characters would you like in your
 var confirmUpperCaseChar = confirm("Do you want this password to contain uppercases?");
 var confirmLowerCaseChar = confirm("Do you want this password to contain lowercases?");
 var confirmNumericChar = confirm("Do you want this password to contain numbers?");
-var confirmSpecialChar = confirm("Do you want this password to special characters?");
+var confirmSpecialChar = confirm("Do you want this password to contain special characters?");
 
 // Push and store user input into the array
 
