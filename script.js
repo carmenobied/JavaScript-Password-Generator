@@ -15,9 +15,10 @@ function generatePassword() {
   var numeric = "0123456789";
   var specialChar = "!$^*&#-=~+_?@$%^{}()";
 
+// Start user prompts and validation of user input. 
+
 var passwordLength = parseInt(prompt("How many characters would you like in your password? Choose between 8 and 128"));
 
-  // First validate user input .Then continue user input prompts.
     if (!passwordLength) {
       alert("This password needs a value. Please try again!");
       return;
@@ -52,13 +53,17 @@ var characterType = [];
     characterType.push(specialChar);
   }
 
+  // Join the new array that contains the stored user input
   var characterTypeJoined = characterType.join('');
   
+  // Computer randomly generates a password from the new joined array, based on stored user inputs
   var passwordFinal = "";
   for (var i = 0, n = characterTypeJoined.length; i < passwordLength; i++) {
-    // Computer randomly chooses a choice from the options array, based on stored user inputs.
+  
   passwordFinal += characterTypeJoined.charAt(Math.floor(Math.random() * n));
    }
+  
+  // Generated secure password is displayed on page
    var passwordText = document.querySelector("#password");
    passwordText.value = passwordFinal;
   } 
