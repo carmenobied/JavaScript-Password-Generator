@@ -20,7 +20,7 @@ function() - generatePassword() - Math.random() - Math.floor() - charAt() method
 See demo below of Password Generator: 
 <video src="video.mp4" width="320" height="200" controls preload></video>
 
-![Password Generator Demo](/assets/Password-Generator.mp4)
+![Password Generator Demo](/assets/Password-Generator-Demo.gif)
 
 See screenshot below for reference: 
 ![Password Generator](/assets/03-javascript-homework-demo.png)
