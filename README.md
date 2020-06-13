@@ -2,7 +2,7 @@
 
 The goal was to create an application that generates a random password based on user-selected criteria. This app runs in the browser and features dynamically updated HTML and CSS powered by the JavaScript code. This also involved ensuring the app features a clean and polished UI, with a responsive layout, ensuring it adapts to multiple screen sizes. Employees with access to sensitive data will often need to be able to randomly generate a password that meets certain criteria so that they can create a strong password that provides greater security. 
 
-Use Password Generator here: https://carmenobied.github.io/week3-homework/ 
+Use Password Generator here: https://carmenobied.github.io/JavaScript-Password-Generator/
 
 ## Installation
 ```bash
